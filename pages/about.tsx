@@ -10,6 +10,19 @@ const AboutPage = () => (
         <a>Go home</a>
       </Link>
     </p>
+
+    <style jsx global>
+      {
+        `
+        h1{
+          color:red
+        }
+        p{
+          background:blue
+        }
+        `
+      }
+    </style>
   </Layout>
 )
 

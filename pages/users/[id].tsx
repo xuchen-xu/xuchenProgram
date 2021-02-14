@@ -8,14 +8,16 @@ import ListDetail from '../../components/ListDetail'
 type Props = {
   item?: User
   errors?: string
+  router?: any
 }
 
-const StaticPropsDetail = ({ item, errors }: Props) => {
+const StaticPropsDetail = ({ item, errors, router }: Props) => {
   if (errors) {
     return (
       <Layout title="Error | Next.js + TypeScript Example">
         <p>
           <span style={{ color: 'red' }}>Error:</span> {errors}
+          {router.query.id}
         </p>
       </Layout>
     )
@@ -23,9 +25,8 @@ const StaticPropsDetail = ({ item, errors }: Props) => {
 
   return (
     <Layout
-      title={`${
-        item ? item.name : 'User Detail'
-      } | Next.js + TypeScript Example`}
+      title={`${item ? item.name : 'User Detail'
+        } | Next.js + TypeScript Example`}
     >
       {item && <ListDetail item={item} />}
     </Layout>
