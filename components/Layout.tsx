@@ -39,7 +39,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     <style jsx global>
       {
         `
-        }`
+        `
       }
     </style>
   </div>

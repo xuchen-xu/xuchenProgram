@@ -1,5 +1,7 @@
 body{
-    background-color: #F1F6FC;
+    background-color: hsl(213, 65%, 97%);
+    font-family: 华文楷体;
+    color: black;
 }
 .container{
     margin: auto;

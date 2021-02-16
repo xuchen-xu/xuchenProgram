@@ -1,6 +1,7 @@
 // import Link from 'next/link'
 import Layout from "../components/Layout";
 import { withRouter } from "next/router";
+import React from "react";
 // import { useEffect } from "react";
 // import { Button } from 'antd';
 //开启css模块化之后可以这样使用样式
@@ -13,7 +14,7 @@ import { Carousel } from "antd";
 
 // 声明的全局数据
 var imgnumber: number = 0;
-
+// let imgnumber3: number = 22;
 const IndexPage = (props: any) => {
   // console.log(props);
   return (
@@ -41,7 +42,7 @@ const IndexPage = (props: any) => {
                 className={cssobj.infoLink}
                 target="_blank"
                 rel="nofollow"
-                style={{color:"#fff"}}
+                style={{ color: "#fff" }}
               >
                 <span
                   className={["fa", "fa-shopping-cart", cssobj.tubiao].join(
@@ -159,7 +160,7 @@ const IndexPage = (props: any) => {
         </Carousel>
         {/* , mountNode, */}
         {/* <div className="nov-thi clear"> */}
-          {/* <img src="../static/images/image/2.jpg"></img> */}
+        {/* <img src="../static/images/image/2.jpg"></img> */}
         {/* </div> */}
         <div className="nov-for clear">
           <div>新书速递</div>
@@ -178,7 +179,7 @@ const IndexPage = (props: any) => {
                     height="172"
                   />
                   {item.bookName}
-                  作者:{item.author}
+                  <div>作者:{item.author}</div>
                 </div>
               );
             }
@@ -187,15 +188,15 @@ const IndexPage = (props: any) => {
         {/* ----------------------------------------------- */}
         {/* <%--豆瓣日历--%> */}
         <div className="nov-cal clear">
-          <img src="../static/images/image/3.jpg" />
+          <img src="../static/images/mulu.jpg" width="675" height="120" />
         </div>
         <div>
           <div className="book-news clear">图书资讯</div>
           <div className="book-news-content clear">
             <div className="bluetext">
-              豆瓣一周新书速递｜陈春成首部短篇小说集，呈现汉语小说的一种风度与新的可能性
+              孔网一周新书速递｜陈春成首部短篇小说集，呈现汉语小说的一种风度与新的可能性
             </div>
-            <div className="graytext">豆瓣读书</div>
+            <div className="graytext">读书推荐</div>
             <div className="blacktext">
               虚构类
               *特别推荐仿佛鸟栖树，鱼潜渊，一切稳妥又安宁，夜晚这才真正地降临。
@@ -206,7 +207,127 @@ const IndexPage = (props: any) => {
         </div>
       </div>
       {/* ------------------------------------------------------------------------------ */}
+      <div>
+        <div className="most-like" >
+          <div className="like" style={{marginLeft:168}}>最受关注图书榜</div>
+          <div className="like1">
+            <div>虚构类»</div>
+            <div>非虚构类»</div>
+          </div>
+        </div>
+        <div className="like-content clear" style={{marginLeft:250}}>
+          {props.show.map((item: any) => {
+            // let grade = item.grade;
+            if (item.bookId < 32 && item.bookId >22) {
+              if (item.grade < 9) {
+                return (
+                  <div key={item.bookId}>
+                    <img
+                      src={`../static/images/image/${item.imgPath}`}
+                      width="85"
+                      height="120"
+                    ></img>
+                    <br></br>
+                    <div className="bk clear">
+                      <div className="bookname">{item.bookName}</div>
+                      <br></br>
+                      <div className="dbgrade">
+                        <div>评分：</div>
+                        <div className="cl">
+                          <React.Fragment>
+                            <div className="grade">{item.grade}</div>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                          </React.Fragment>
+                        </div>
+                      </div>
+                      <div className="bookau">作者:{item.author}</div>
+                      <br></br>
+                    </div>
+                  </div>
+                );
+              } else {
+                return (
+                  <div key={item.bookId}>
+                    <img
+                      src={`../static/images/image/${item.imgPath}`}
+                      width="85"
+                      height="120"
+                    ></img>
+                    <br></br>
+                    <div className="bk clear">
+                      <div className="bookname">{item.bookName}</div>
+                      <br></br>
+                      <div className="dbgrade">
+                        <div>评分：</div>
+                        <div className="cl">
+                          <React.Fragment>
+                            <div className="grade">{item.grade}</div>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                            <img
+                              src="../static/images/image/star1.png"
+                              height="11"
+                              width="11"
+                            ></img>
+                          </React.Fragment>
+                        </div>
+                      </div>
+                      <div className="bookau">作者:{item.author}</div>
+                      <br></br>
+                    </div>
+                  </div>
+                );
+              }
+            }
+          })}
+        </div>
+      </div>
+      {/* ------------------------------------------------------------------------------ */}
+      <footer>
+    <br></br><br></br><br></br><br></br>
+    <span>© 2020－2020 baofu.com, all rights reserved 孔子旧书网</span><br></br>
+    <span>联系我们 xinguan@weibo.com</span>
+</footer>
+   {/* ------------------------------------------------------------------------------ */}
     </Layout>
+
   );
 };
 
@@ -219,5 +340,15 @@ IndexPage.getInitialProps = async () => {
   //这边返回的数据会被挂载到组件的props中
   return { show: data };
 };
+
+// http://localhost:3001/api/noveltable
+
+// IndexPage.getInitialProps = async () => {
+//   const res = await fetch("http://localhost:3001/api/noveltable");
+//   const data = await res.json();
+//   //这边返回的数据会被挂载到组件的props中
+//   let novelshow;
+//   return { show: data };
+// };
 
 export default withRouter(IndexPage);
