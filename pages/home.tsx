@@ -1,7 +1,7 @@
 // import Link from 'next/link'
 import Layout from "../components/Layout";
 import { withRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 // import { useEffect } from "react";
 // import { Button } from 'antd';
 //开启css模块化之后可以这样使用样式
@@ -12,10 +12,17 @@ import "./css/home.css";
 
 import { Carousel } from "antd";
 
+
+
 // 声明的全局数据
 var imgnumber: number = 0;
+
 // let imgnumber3: number = 22;
 const IndexPage = (props: any) => {
+  let [state, setState] = useState(false);
+ let handleClick = (e:any) => {
+    
+}
   // console.log(props);
   return (
     <Layout title="首页">
@@ -322,6 +329,114 @@ const IndexPage = (props: any) => {
       {/* ------------------------------------------------------------------------------ */}
       <footer>
     <br></br><br></br><br></br><br></br>
+    <div className="content">
+    <div className="friend_link_box">
+        <div className="friend_link_tit clearfix">
+            <a href="javascript:;" className="" onClick={handleClick} >合作伙伴</a>
+            <a href="javascript:;" className="">友情链接</a>
+            <a href="javascript:;" className="now">推荐专题</a>
+        </div>
+        <div className="friend_link_list clearfix m_t10">
+            <div className="f_box" style={{ display: "none"}} >
+                <ul>
+                                                                        <li><a href="http://history.sohu.com/" target="_blank" className="black333">搜狐历史</a></li>
+                                                    <li><a href="http://www.xilu.com/" target="_blank" className="black333">西陆军事网</a></li>
+                                                    <li><a href="https://www.koolearn.com" target="_blank" className="black333">新东方在线</a></li>
+                                                    <li><a href="http://www.kaoyan.com/" target="_blank" className="black333">考研帮</a></li>
+                                                    <li><a href="http://www.banbijiang.com/" target="_blank" className="black333">半壁江中文网</a></li>
+                                                    <li><a href="https://www.tianyancha.com/" target="_blank" className="black333">天眼查</a></li>
+                                                    <li><a href="http://www.zjguji.com/" target="_blank" className="black333">浙江古籍出版社</a></li>
+                                                    <li><a href="http://www.tuniu.com/" target="_blank" className="black333">途牛旅游网</a></li>
+                                                    <li><a href="http://www.cmr.com.cn/" target="_blank" className="black333">网络教育</a></li>
+                                                    <li><a href="http://www.rongbaozhai.cn/" target="_blank" className="black333">荣宝斋</a></li>
+                                                    <li><a href="https://www.ooopic.com/" target="_blank" className="black333">我图网</a></li>
+                                                    <li><a href="https://www.hjenglish.com/" target="_blank" className="black333">沪江英语</a></li>
+                                                    <li><a href="https://www.ximalaya.com/" target="_blank" className="black333">有声小说</a></li>
+                                                    <li><a href="http://book.kongfz.com/newbook/" target="_blank" className="black333">每日上书</a></li>
+                                                    <li><a href="http://www.zashuguan.cn/" target="_blank" className="black333">杂书馆</a></li>
+                                                    <li><a href="http://www.kongfz.com/community/links.php" target="_blank" className="black333">更多友链 &gt;&gt;</a></li>
+                                                            </ul>
+            </div>
+            <div className="f_box" style={{display: "none"}} >
+                <ul>
+                                                                        <li><a href="http://www.kongfz.cn/" target="_blank">拍卖网站</a> </li>
+                                                    <li><a href="https://www.smzdm.com/" target="_blank">什么值得买</a> </li>
+                                                    <li><a href="https://www.qcc.com/" target="_blank">企查查</a> </li>
+                                                    <li><a href="https://book.tiexue.net/" target="_blank">军事读书</a> </li>
+                                                    <li><a href="http://www.canet.com.cn/" target="_blank">中国会计网</a> </li>
+                                                    <li><a href="http://www.huatu.com/" target="_blank">公务员考试网</a> </li>
+                                                    <li><a href="http://www.kekenet.com/" target="_blank">可可英语</a> </li>
+                                                    <li><a href="http://www.02516.com/" target="_blank">网址导航</a> </li>
+                                                    <li><a href="http://www.bookschina.com/" target="_blank">中国图书网</a> </li>
+                                                    <li><a href="http://www.63243.com/" target="_blank">网址大全</a> </li>
+                                                    <li><a href="https://www.zhipin.com/" target="_blank">招聘网</a> </li>
+                                                    <li><a href="http://www.jmw.com.cn/" target="_blank">加盟</a> </li>
+                                                    <li><a href="http://www.qianlima.com/" target="_blank">千里马招投标</a> </li>
+                                                    <li><a href="http://www.chexun.com/" target="_blank">车讯网</a> </li>
+                                                    <li><a href="http://www.cifnews.com/" target="_blank">跨境电商</a> </li>
+                                                    <li><a href="http://www.ebrun.com" target="_blank">亿邦动力网</a> </li>
+                                                    <li><a href="http://www.aoshu.com" target="_blank">奥数</a> </li>
+                                                    <li><a href="http://www.959.cn/" target="_blank">959品牌商机网</a> </li>
+                                                    <li><a href="http://www.51bi.com/" target="_blank">返利网</a> </li>
+                                                    <li><a href="http://www.southmoney.com/" target="_blank">股票</a> </li>
+                                                    <li><a href="http://www.lvye.cn/" target="_blank">绿野网</a> </li>
+                                                    <li><a href="https://www.wed114.cn/" target="_blank">wed114结婚网</a> </li>
+                                                    <li><a href="http://www.zbird.com/" target="_blank">钻石小鸟</a> </li>
+                                                    <li><a href="https://www.zhifang.com/" target="_blank">智房旅游地产</a> </li>
+                                                    <li><a href="http://www.zhulong.com/" target="_blank">建筑</a> </li>
+                                                    <li><a href="http://www.anzhi.com/" target="_blank">安卓市场</a> </li>
+                                                    <li><a href="https://office.fang.com/" target="_blank">北京写字楼网</a> </li>
+                                                    <li><a href="https://www.kanzhun.com/" target="_blank">看准网</a> </li>
+                                                    <li><a href="http://www.rbz1672.com/" target="_blank">荣宝斋在线</a> </li>
+                                                            </ul>
+            </div>
+            <div className="f_box" style={{display:"block"}} >
+                <ul>
+                                                                        <li><a href="http://bq.kongfz.com/" target="_blank">图书大全</a> </li>
+                                                    <li><a href="http://www.kongfz.com/topic/" target="_blank">热搜专题</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/" target="_blank">出版社大全</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/" target="_blank">作家大全</a> </li>
+                                                    <li><a href="https://shoushu.kongfz.com/" target="_blank">上门收书</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/kexuechubanshe/" target="_blank">科学出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/qinghuadaxue/" target="_blank">清华大学出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/zhongguobiaozhun/" target="_blank">中国标准出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/dianzigongye/" target="_blank">电子工业出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/huaxuegongye/" target="_blank">化学工业出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/beijingdaxuechubanshe/" target="_blank">北京大学出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/renminweisheng/" target="_blank">人民卫生出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/zhongguojianzhugongye/" target="_blank">中国建筑工业出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/zhongguorenmindaxue/" target="_blank">中国人民大学出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/shangwuyinshuguan" target="_blank">商务印书馆</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/zhongguotiedao/" target="_blank">中国铁道出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/renminchubanshe/" target="_blank">人民出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/zhongguodianli/" target="_blank">中国电力出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/zhonghuashuju/" target="_blank">中华书局</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/falvchubanshe/" target="_blank">法律出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/gaodengjiaoyu/" target="_blank">高等教育出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/publisher/jixiegongye/" target="_blank">机械工业出版社</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/jinyong/" target="_blank">金庸</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/cunshangchunshu/" target="_blank">村上春树</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/maodun/" target="_blank">茅盾</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/zhangxiaoxian/" target="_blank">张小娴</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/wangxiaobo/" target="_blank">王小波</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/laoshe/" target="_blank">老舍</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/moyan/" target="_blank">莫言</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/luxun/" target="_blank">鲁迅</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/j-k-luolin/" target="_blank">J.K.罗琳</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/zhangailing/" target="_blank">张爱玲</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/yuhua/" target="_blank">余华</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/qiongyao/" target="_blank">琼瑶</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/zhangdaqian/" target="_blank">张大千</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/xubeihong/" target="_blank">徐悲鸿</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/dafenqi/" target="_blank">达芬奇</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/annibaobei/" target="_blank">安妮宝贝</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/bingxin/" target="_blank">冰心</a> </li>
+                                                    <li><a href="http://www.kongfz.com/writer/haiyan/" target="_blank">海岩</a> </li>
+                                                            </ul>
+            </div>
+        </div>
+    </div>
+</div>
     <span>© 2020－2020 baofu.com, all rights reserved 孔子旧书网</span><br></br>
     <span>联系我们 xinguan@weibo.com</span>
 </footer>
