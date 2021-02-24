@@ -1,0 +1,233 @@
+ul,
+p,
+img,
+h3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+.pullLeft {
+  float: left !important;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.leftPart {
+  padding-right: 20px;
+  margin-right: 50px;
+}
+.PC {
+  display: block;
+  color: #333;
+  font-weight: 500;
+}
+.header_line {
+  position: relative;
+  display: block;
+  top: -10px;
+}
+.lunbobox {
+  width: 100%;
+  /* background-color: red; */
+  position: relative;
+}
+.lunbo {
+  margin: 0 auto;
+  /* left: -100px; */
+  width: 1000px;
+  height: 270px;
+}
+
+.bottomColor {
+  width: 100%;
+  background-color: #f7f7f6;
+}
+
+.store-box {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 70px;
+  /* height: 597px; */
+  height: 2000px;
+  /* background-color: red; */
+}
+.bodycenter {
+  margin: 0 auto;
+  /* background-color: yellow; */
+  width: 1000px;
+  height: 100%;
+}
+
+.table-right {
+  width: 820px;
+  border-left: 1px solid #e5e5e5;
+  float: right;
+  /* height: 577px; */
+  height: 2000px;
+}
+.content-right {
+  float: right;
+  width: 790px;
+  margin-left: 30px;
+}
+.m_b50 {
+  margin-bottom: 50px !important;
+  height: 577px;
+}
+
+.booklist_tit {
+  border-bottom: 1px solid #ccc;
+  line-height: 48px;
+  height: 48px;
+  /* position: relative; */
+}
+.pull-left {
+  float: left !important;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  color: #333;
+  font-weight: bolder;
+}
+
+.more_list {
+  line-height: 18px;
+  margin-top: 18px;
+}
+
+.pull-right {
+  float: right !important;
+  /* padding-bottom: 5px; */
+  /* line-height: 0px; */
+}
+
+.now {
+  color: #8c222c;
+  position: relative;
+  margin-left: 23px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.book_list {
+  width: 790px;
+  overflow: hidden;
+}
+.m_t25 {
+  /* margin-top: 25px; */
+  padding-top: 25px;
+}
+.litesthome {
+  line-height: 20px;
+  word-break: break-all;
+  position: relative;
+  float: left;
+  width: 130px;
+  height: 218px;
+  /* height: 199px; */
+  margin-right: 35px;
+  margin-bottom: 37px;
+  line-height: 20px;
+  word-break: break-all;
+  /* background-color: red; */
+}
+.pic a img {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.pic a {
+  display: block;
+  width: 128px;
+  height: 128px;
+  line-height: 124px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+.book_name {
+  font-size: 12px;
+  max-height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.book_name a {
+  color: #333;
+}
+.shop_name {
+  height: 20px;
+  color: #8999a9;
+  overflow: hidden;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.shop_name a {
+  color: #8999a9;
+  word-break: break-all;
+}
+.bookjuti_price {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #bf7f5f;
+  font-size: 16px;
+  margin-top: 5px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bookjuti_price span {
+  float: left;
+  width: 12px;
+  font-size: 14px;
+  color: #bf7f5f;
+}
+
+.booklist_tit_big {
+  border-bottom: 1px solid #ccc;
+  line-height: 48px;
+  height: 48px;
+}
+
+.m_r10 {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.book_list ul {
+  margin-right: -42px;
+  height: 480px;
+  overflow: hidden;
+}
+
+.tit_info {
+  color: #666;
+  vertical-align: bottom;
+  line-height: 20px;
+  margin-top: 17px;
+  font-size: 14px;
+}
+
+.line_xie {
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  font-style: normal;
+  color: #999;
+  font-weight: 400;
+}
+
+.m_r10 {
+  margin-right: 10px;
+}

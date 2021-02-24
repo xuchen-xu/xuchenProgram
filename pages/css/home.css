@@ -1,6 +1,7 @@
 body {
   background-color: hsl(213, 65%, 97%);
-  font-family: 华文楷体;
+  /* font-family: 华文楷体; */
+  font-family: "宋体";
   color: black;
 }
 .container {
@@ -20,7 +21,9 @@ body {
 /*background-color: slategray;*/
 /*cursor: pointer;*/
 /*}*/
-
+/* .menuxiala{
+  text-align: center;
+} */
 /* ----------------------------------------------------- */
 .content {
   width: 1000px;
@@ -29,26 +32,31 @@ body {
 .friend_link_box {
   margin-top: 45px;
   margin-bottom: 20px !important;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgb(216, 216, 216);
   overflow: hidden;
 }
 
 .friend_link_box .friend_link_tit a {
-    display: block;
-    float: left;
-    padding: 0 10px;
-    font-size: 14px;
-    border: 1px solid #fff;
-        border-bottom-color: rgb(255, 255, 255);
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    line-height: 32px;
-    height: 35px;
-    position: relative;
-    bottom: -1px;
-    left: -1px;
-    border-bottom: 1px solid #e5e5e5;
-    color: #999;
+  display: block;
+  float: left;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  line-height: 32px;
+  height: 35px;
+  position: relative;
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #999;
+}
+
+.friend_link_box .friend_link_tit a:hover {
+  cursor: pointer;
+  color: blue;
 }
 
 .friend_link_box .friend_link_tit {
@@ -65,6 +73,10 @@ body {
   font-size: 12px;
   color: #999;
   line-height: 20px;
+}
+.friend_link_box .friend_link_list a:hover {
+  cursor: pointer;
+  color: blue;
 }
 a.now {
   border: 1px solid #e5e5e5;
