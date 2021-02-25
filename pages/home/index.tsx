@@ -170,35 +170,35 @@ export default class IndexPage extends React.Component<IProps, state> {
                 </li>
 
                 <li style={{ paddingLeft: "4px" }}>
-                  <a className="PC" href="/newbook">
+                  <a className="PC" href="/newbook" target="_blank" style={{textDecoration:"none"}}>
                     <div>新书资讯</div>
                     <span className="header_line"></span>
                   </a>
                 </li>
 
                 <li style={{ paddingLeft: "4px" }}>
-                  <a className="PC">
+                  <a className="PC" style={{textDecoration:"none"}}>
                     <div>小说</div>
                     <span className="header_line"></span>
                   </a>
                 </li>
 
                 <li style={{ paddingLeft: "4px" }}>
-                  <a className="PC">
+                  <a className="PC" style={{textDecoration:"none"}}>
                     <div>散文</div>
                     <span className="header_line"></span>
                   </a>
                 </li>
 
                 <li style={{ paddingLeft: "4px" }}>
-                  <a className="PC">
+                  <a className="PC" style={{textDecoration:"none"}}>
                     <div>随笔</div>
                     <span className="header_line"></span>
                   </a>
                 </li>
 
                 <li style={{ paddingLeft: "4px" }}>
-                  <a className="PC">
+                  <a className="PC" style={{textDecoration:"none"}}>
                     <div>文学</div>
                     <span className="header_line"></span>
                   </a>

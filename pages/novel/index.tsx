@@ -85,7 +85,9 @@ const IndexPage = (props: any) => {
             <div className="box clear">文学</div>
           </div>
         </div>
-        <div className="photo clear"></div>
+        <div className="photo clear">
+          <img src="../../static/images/image/novelfirst.jpg"/>
+        </div>
         <div className="books clear">
           {props.show.map((item: any) => {
             imgnumber++;
@@ -106,7 +108,7 @@ const IndexPage = (props: any) => {
             }
           })}
         </div>
-        <Chuanzhi {...test}/>
+        {/* <Chuanzhi {...test}/> */}
       </div>
     </Layout>
   );

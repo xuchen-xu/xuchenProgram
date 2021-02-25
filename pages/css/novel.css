@@ -91,12 +91,17 @@ body{
 .photo{
     float:left;
     width:1039px;
-    height: 104px;
-    background-image: url(../../static/images/image/novelfirst.jpg);
+    /* height: 104px; */
+    height: 180px;
+    /* background-image: url(../../static/images/image/novelfirst.jpg); */
     position: relative;
     left:215px;
     top:10px;
     background-size: auto;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
 }
 .classification{
     width:250px;

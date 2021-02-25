@@ -6,9 +6,9 @@ import React from "react";
 // import { Button } from 'antd';
 //开启css模块化之后可以这样使用样式
 // import cssobj from './index.less'
-import cssobj from "./css/home.less";
+import cssobj from "../css/home.less";
 import "@/static/css/font-awesome.css";
-import "./css/home.css";
+import "../css/home.css";
 import fetch from "isomorphic-unfetch";
 
 import { Carousel } from "antd";
@@ -16,12 +16,13 @@ import { Carousel } from "antd";
 // import { type } from "os";
 import { Menu, Dropdown } from "antd";
 import { DownOutline } from "@ant-design/icons";
+import Link from "next/link";
 const { SubMenu } = Menu;
 
 // 声明的全局数据
 const menu1 = (
   <Menu>
-    <Menu.Item >
+    <Menu.Item>
       <a
         target="_blank"
         rel="noopener noreferrer"
@@ -73,7 +74,14 @@ const menu3 = (
       </Menu.Item> */}
       {/* <Menu.Item>iOS • Android</Menu.Item> */}
     </Menu.ItemGroup>
-    <Menu.ItemGroup><img src="../static/images/app.jpg" width="150" height="150" style={{marginRight:"10px",marginLeft:"10px"}} /></Menu.ItemGroup>
+    <Menu.ItemGroup>
+      <img
+        src="../static/images/app.jpg"
+        width="150"
+        height="150"
+        style={{ marginRight: "10px", marginLeft: "10px" }}
+      />
+    </Menu.ItemGroup>
     <Menu.ItemGroup title="iOS • Android"></Menu.ItemGroup>
   </Menu>
 );
@@ -260,24 +268,28 @@ export default class IndexPage extends React.Component<IProps, state> {
           {/* ----------------------------------------------- */}
           {/* <LunBoComponent lunboObject={data.lunboObject} imgArray={data.imgArray} linkArray={data.linkArray}/>, document.getElementById('wrapper') */}
           <div>
-          <Carousel autoplay>
-            <div>
-              {/* <h3 className="contentStyle">1</h3> */}
-              <img src="../static/lunbo/lun0.jpg" width="1200" height="270" />
-            </div>
-            <div>
-              <img src="../static/lunbo/lun11.jpg" width="1200" height="270" />
-            </div>
-            <div>
-              <img src="../static/lunbo/lun2.jpg" width="1200" height="270" />
-            </div>
-            <div>
-              <img src="../static/lunbo/lun3.jpg" width="1200" height="270" />
-            </div>
-            <div>
-              <img src="../static/lunbo/lun4.jpg" width="1200" height="270" />
-            </div>
-          </Carousel>
+            <Carousel autoplay>
+              <div>
+                {/* <h3 className="contentStyle">1</h3> */}
+                <img src="../static/lunbo/lun0.jpg" width="1200" height="270" />
+              </div>
+              <div>
+                <img
+                  src="../static/lunbo/lun11.jpg"
+                  width="1200"
+                  height="270"
+                />
+              </div>
+              <div>
+                <img src="../static/lunbo/lun2.jpg" width="1200" height="270" />
+              </div>
+              <div>
+                <img src="../static/lunbo/lun3.jpg" width="1200" height="270" />
+              </div>
+              <div>
+                <img src="../static/lunbo/lun4.jpg" width="1200" height="270" />
+              </div>
+            </Carousel>
           </div>
           {/* , mountNode, */}
           {/* <div className="nov-thi clear"> */}
@@ -288,24 +300,28 @@ export default class IndexPage extends React.Component<IProps, state> {
             <div>更多»</div>
           </div>
           {/* ----------------------------------------------- */}
+
           <div className="nov-fif clear">
             {this.props.show.map((item: any) => {
               imgnumber++;
               if (imgnumber < 22) {
                 return (
-                  <div key={item.bookId}>
-                    <img
-                      src={`../static/images/image/${item.imgPath}`}
-                      width="115"
-                      height="172"
-                    />
-                    {item.bookName}
-                    <div>作者:{item.author}</div>
-                  </div>
+                  <Link href="/newbook/[id]" as={`/newbook/${item.bookId}`} key={item.bookId} >
+                    <div key={item.bookId}>
+                      <img
+                        src={`../static/images/image/${item.imgPath}`}
+                        width="115"
+                        height="172"
+                      />
+                      {item.bookName}
+                      <div>作者:{item.author}</div>
+                    </div>
+                  </Link>
                 );
               }
             })}
           </div>
+
           {/* ----------------------------------------------- */}
           {/* <%--豆瓣日历--%> */}
           <div className="nov-cal clear">
