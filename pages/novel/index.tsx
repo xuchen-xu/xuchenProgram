@@ -24,69 +24,28 @@ const IndexPage = (props: any) => {
   };
 
   return (
-    <Layout title="小说界面">
+    <Layout title="分类：小说">
       <div className="continer clear">
         <div className="title clear">
-          <div className="text">豆瓣读书</div>
-          <form
-            className="form"
-            action={`/detail/${inputRef.current?.value}`}
-            method="get"
-          >
-            <input
-              className="lable"
-              type="text"
-              name="bookName"
-              placeholder="请输入书名"
-              ref={inputRef}
-            />
-            <input
-              className="search"
-              type="button"
-              value="搜索"
-              onClick={handleSubmit}
-            />
-            {/* <input className="search" type="submit" value="搜索" onClick={handleSubmit}/> */}
-            <Link href={`/novel/[id]`} as={`/novel/${inputRef.current?.value}`}>
-              <a>搜索</a>
-            </Link>
-            {/* <Link ></Link> */}
-
-            {/* <div>
-           {
-             props.show.map((item,index)=>{
-               return(
-                // <Link href="/novel/[user]" as={`/novel/${index}`}><a>搜索</a></Link>
-               )
-             })
-           }
-         </div> */}
-          </form>
-          <form
-            className="form"
-            action={`/detail/${inputRef.current?.value}`}
-            method="post"
-          >
-            <input
-              className="lable"
-              type="text"
-              name="author"
-              placeholder="请输入作者名"
-            />
-            <input className="search" type="submit" value="搜索" />
-          </form>
+          <div className="dibubox">
+            <div className="formbox">
+              <div className="noveltext">小 说 分 类</div>
+            </div>
+          </div>
         </div>
         {/* --------------------------------------------------------------------- */}
         <div className="classification">
-          <div className="two clear">
-            <div className="special clear">小说</div>
-            <div className="box clear">散文</div>
-            <div className="box clear">随笔</div>
-            <div className="box clear">文学</div>
+          <div className="box-fenglei">
+            <div className="two clear">
+              <div className="special clear">小说</div>
+              <div className="box clear">散文</div>
+              <div className="box clear">随笔</div>
+              <div className="box clear">文学</div>
+            </div>
           </div>
         </div>
         <div className="photo clear">
-          <img src="../../static/images/image/novelfirst.jpg"/>
+          <img src="../../static/images/image/novelfirst.jpg" />
         </div>
         <div className="books clear">
           {props.show.map((item: any) => {
