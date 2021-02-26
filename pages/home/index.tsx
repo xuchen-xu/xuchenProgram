@@ -3,11 +3,11 @@ import Layout from "../../components/Layout";
 // import { withRouter } from "next/router";
 import React from "react";
 import "@/static/css/font-awesome.css";
-import "../css/essay.css";
-import cssobj from "../css/essay.less";
+import "../css/home1.css";
+import cssobj from "../css/home1.less";
 import fetch from "isomorphic-unfetch";
 import { Carousel } from "antd";
-
+import Footer from "../components/footerbook"
 // 声明的全局数据
 
 type state = {
@@ -1030,84 +1030,7 @@ export default class IndexPage extends React.Component<IProps, state> {
           </div>
           {/* -----------------------主体结束----------------------------- */}
           {/* 底部开始 */}
-          <div className="footer-box">
-            <div className="footer-wrap clearfix">
-              <div className="copyright-info-box">
-                © 2002-2021 Kongfz.com 孔子旧书网 版权所有
-              </div>
-              <div className="link-box">
-                <a
-                  className="item"
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://www.kongfz.com/help/aboutus.php"
-                >
-                  关于孔网
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://www.kongfz.com/help/lianxi.html"
-                >
-                  联系我们
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://help.kongfz.com/"
-                >
-                  帮助中心
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://www.kongfz.com/help/copyright.php"
-                >
-                  版权隐私
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://www.kongfz.com/help/guanggao.php"
-                >
-                  广告业务
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://www.kongfz.com/help/zhaopin.php"
-                >
-                  工作机会
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  href="https://m.kongfz.com/"
-                >
-                  移动版
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  href="http://book.kongfz.com/"
-                >
-                  图书目录
-                </a>
-                <a
-                  className="item"
-                  target="_blank"
-                  href="http://bq.kongfz.com/"
-                >
-                  图书标签
-                </a>
-              </div>
-            </div>
-          </div>
+          <Footer></Footer>
 
           {/* 底部结束 */}
           {/* ------------------------------------------------------------------------------------------------------- */}

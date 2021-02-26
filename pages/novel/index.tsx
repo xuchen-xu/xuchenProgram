@@ -5,7 +5,7 @@ import React, { useState, useRef } from "react";
 import "@/static/css/font-awesome.css";
 import "../css/novel.css";
 import fetch from "isomorphic-unfetch";
-import Chuanzhi from "../components/chuanzhi";
+import Chuanzhi from "../components/footerbook";
 
 // 声明的全局数据
 let imgnumber = 0;
@@ -25,50 +25,7 @@ const IndexPage = (props: any) => {
 
   return (
     <Layout title="分类：小说">
-      <div className="continer clear">
-        <div className="title clear">
-          <div className="dibubox">
-            <div className="formbox">
-              <div className="noveltext">小 说 分 类</div>
-            </div>
-          </div>
-        </div>
-        {/* --------------------------------------------------------------------- */}
-        <div className="classification">
-          <div className="box-fenglei">
-            <div className="two clear">
-              <div className="special clear">小说</div>
-              <div className="box clear">散文</div>
-              <div className="box clear">随笔</div>
-              <div className="box clear">文学</div>
-            </div>
-          </div>
-        </div>
-        <div className="photo clear">
-          <img src="../../static/images/image/novelfirst.jpg" />
-        </div>
-        <div className="books clear">
-          {props.show.map((item: any) => {
-            imgnumber++;
-            if (imgnumber < 22) {
-              return (
-                <div key={item.bookId} className="book clear">
-                  <div style={{ alignContent: "center" }}>
-                    <img
-                      src={`../static/images/image/${item.imgPath}`}
-                      width="115"
-                      height="172"
-                    />
-                  </div>
-                  <div className="text1">{item.bookName}</div>
-                  <div className="text2">作者:{item.author}</div>
-                </div>
-              );
-            }
-          })}
-        </div>
-        {/* <Chuanzhi {...test}/> */}
-      </div>
+      
     </Layout>
   );
 };

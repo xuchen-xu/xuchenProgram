@@ -6,6 +6,8 @@ import React, { useState } from "react";
 // import { useEffect } from 'react'
 import "../css/newbookdetail.css";
 import cssobj from "../css/newbookdetail2.less";
+import Footer from "../components/footerbook";
+import Aside from "../components/aside";
 
 // let bookidtest = 0;
 const IndexPage = (props: any) => {
@@ -251,7 +253,9 @@ const IndexPage = (props: any) => {
                         </h2>
                         <div id="link-report" className="indent2">
                           <div>
-                            <div className="intro" style={{color: "#111"}}>{item.contentValidity}</div>
+                            <div className="intro" style={{ color: "#111" }}>
+                              {item.contentValidity}
+                            </div>
                           </div>
                         </div>
                         {/* ----------作者简介--------------------- */}
@@ -259,7 +263,9 @@ const IndexPage = (props: any) => {
                           <span>作者简介</span>
                           &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
                         </h2>
-                        <div className="intro" style={{color: "#111"}}>{item.authorContent}</div>
+                        <div className="intro" style={{ color: "#111" }}>
+                          {item.authorContent}
+                        </div>
                         {/* ----------原文摘录--------------------- */}
                         <h2 className="h233">
                           <span>原文摘录</span>
@@ -271,27 +277,294 @@ const IndexPage = (props: any) => {
                             <figure>
                               <div className="tubiao-newbook"></div>
                               {item.yuanwen}
-                            <a style={{color: "#3377aa"}}> ( 查看原文 )</a>
+                              <a style={{ color: "#3377aa" }}> ( 查看原文 )</a>
                             </figure>
                           </li>
                           <li>
                             <figure>
                               <div className="tubiao-newbook"></div>
                               {item.zhailu}
-                            <a style={{color: "#3377aa"}}> ( 查看原文 )</a>
+                              <a style={{ color: "#3377aa" }}> ( 查看原文 )</a>
                             </figure>
                           </li>
                         </ul>
                         {/* -----------喜欢推荐 */}
-                        
+                        <h2 className="h233">
+                          <span>喜欢读《{item.bookName}》的人也喜欢</span>
+                          &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+                        </h2>
+                        <div className="sahalao-content clearfix">
+                          <dl className="dl1">
+                            <dt>
+                              <a>
+                                <img src={item.tuijian1}></img>
+                              </a>
+                            </dt>
+                            <dd>{item.ren1}</dd>
+                          </dl>
+                          {/* 1 */}
+                          <dl className="dl1">
+                            <dt>
+                              <a>
+                                <img src={item.tuijian2}></img>
+                              </a>
+                            </dt>
+                            <dd>{item.ren2}</dd>
+                          </dl>
+                          {/* 2 */}
+                          <dl className="dl1">
+                            <dt>
+                              <a>
+                                <img src={item.tuijian3}></img>
+                              </a>
+                            </dt>
+                            <dd>{item.ren3}</dd>
+                          </dl>
+                          {/* 3 */}
+                          <dl className="dl2">
+                            <dt>
+                              <a>
+                                <img src={item.tuijian4}></img>
+                              </a>
+                            </dt>
+                            <dd>{item.ren4}</dd>
+                          </dl>
+                          {/* 4 */}
+                          <dl className="dltest">
+                            <dt>
+                              <a>
+                                <img src={item.tuijian5}></img>
+                              </a>
+                            </dt>
+                            <dd>{item.ren5}</dd>
+                          </dl>
+                          {/* 5 */}
+                        </div>
+                        {/* 评论开始 */}
+                        <h2 className="h233">
+                          <span>短评</span>
+                          &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·(全部)
+                        </h2>
+                        <div className="nav-tab-new">
+                          <div className="tabs-wrapper  line">
+                            <a
+                              className="short-comment-tabs on-tab"
+                              style={{
+                                color: "#111",
+                                fontSize: "14px",
+                                fontWeight: "bolder",
+                              }}
+                            >
+                              热门
+                            </a>
+                            <span> / </span>
+                            <a
+                              className="short-comment-tabs "
+                              style={{ color: "#3377aa" }}
+                            >
+                              最新
+                            </a>
+                            <span> / </span>
+                            <a
+                              className="j a_show_login "
+                              style={{ color: "#3377aa" }}
+                            >
+                              好友
+                            </a>
+                          </div>
+                        </div>
+                        {/* ------评论主体开始了 */}
+                        <div id="comment-list-wrapper" className="indent">
+                          <div
+                            id="new_score"
+                            className="comment-list new_score show"
+                          >
+                            <ul>
+                              <li className="comment-item">
+                                <div className="comment">
+                                  <h3>
+                                    <span className="comment-info">
+                                      <a style={{ color: "#3377aa" }}>
+                                        {item.pinglunauthor1}
+                                      </a>
+
+                                      <span
+                                        className="user-stars allstar50 rating"
+                                        title="力荐"
+                                        style={{
+                                          marginLeft: "5px",
+                                          marginRight: "5px",
+                                          lineHeight: "14px",
+                                        }}
+                                      >
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                      </span>
+                                      <span
+                                        className="comment-time"
+                                        style={{ color: "#aaa" }}
+                                      >
+                                        {item.pingluntime1}
+                                      </span>
+                                    </span>
+                                  </h3>
+                                  <p className="comment-content">
+                                    <span className="short">
+                                      {item.pinglun1}
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li className="comment-item">
+                                <div className="comment">
+                                  <h3>
+                                    <span className="comment-info">
+                                      <a style={{ color: "#3377aa" }}>
+                                        {item.pinglunauthor2}
+                                      </a>
+
+                                      <span
+                                        className="user-stars allstar50 rating"
+                                        title="力荐"
+                                        style={{
+                                          marginLeft: "5px",
+                                          marginRight: "5px",
+                                          lineHeight: "14px",
+                                        }}
+                                      >
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                      </span>
+                                      <span
+                                        className="comment-time"
+                                        style={{ color: "#aaa" }}
+                                      >
+                                        {item.pingluntime2}
+                                      </span>
+                                    </span>
+                                  </h3>
+                                  <p className="comment-content">
+                                    <span className="short">
+                                      {item.pinglun2}
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                              <li className="comment-item">
+                                <div className="comment">
+                                  <h3>
+                                    <span className="comment-info">
+                                      <a style={{ color: "#3377aa" }}>
+                                        {item.pinglunauthor3}
+                                      </a>
+
+                                      <span
+                                        className="user-stars allstar50 rating"
+                                        title="力荐"
+                                        style={{
+                                          marginLeft: "5px",
+                                          marginRight: "5px",
+                                          lineHeight: "14px",
+                                        }}
+                                      >
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star1.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                        <img
+                                          src="../../static/images/image/star.png"
+                                          width="15"
+                                          height="15"
+                                        />
+                                      </span>
+                                      <span
+                                        className="comment-time"
+                                        style={{ color: "#aaa" }}
+                                      >
+                                        {item.pingluntime3}
+                                      </span>
+                                    </span>
+                                  </h3>
+                                  <p className="comment-content">
+                                    <span className="short">
+                                      {item.pinglun3}
+                                    </span>
+                                  </p>
+                                </div>
+                              </li>
+                            </ul>
+                            <p className="pl">
+                              &gt;
+                              <a href="reviews" style={{ fontSize: "13px" }}>
+                                {" "}
+                                更多书评 2547篇
+                              </a>
+                            </p>
+                          </div>
+                        </div>
+                        {/* ------右半部分下一个div */}
                       </div>
                       {/* ----------------------下面一个是article的div--------------------- */}
                     </div>
+                    <Aside></Aside>
                   </div>
                   {/* -------------------------- */}
-                  <div className="aside"></div>
-                  <div className="extra"></div>
+
+                  {/* <div className="extra"></div> */}
                 </div>
+
                 {/* -------------------- */}
               </div>
             </div>
@@ -299,6 +572,7 @@ const IndexPage = (props: any) => {
         })}
 
         {/* --------------主体部分结束-------------------------- */}
+        <Footer></Footer>
       </div>
     </Layout>
   );

@@ -118,8 +118,8 @@ blockquote {
 /* -------------------------------主体部分开始------------------------------------------------- */
 .detailbox-jiuwang {
   width: 100%;
-  /* height: auto; */
-  height: 2000px;
+  height: 1750px;
+  /* height: 2000px; */
   position: relative;
   padding-top: 40px;
   background-color: white;
@@ -151,7 +151,7 @@ blockquote {
 #content {
   margin: 0 auto;
   width: 1040px;
-  height: 100%;
+  /* height: 100%; */
   /* background-color: red; */
 }
 .grid-16-8 {
@@ -335,7 +335,7 @@ a.colbutt .minisubmit {
 }
 
 /* ----------------内容简介部分----------- */
-.related_info{
+.related_info {
   /* position: relative; */
   margin-bottom: 24px;
 }
@@ -379,17 +379,137 @@ a.colbutt .minisubmit {
   font-size: 13px;
   color: #191919;
 }
-.tubiao-newbook{
+.tubiao-newbook {
   content: "";
-position: absolute;
-left: 0;
-top: 10px;
-width: 24px;
-height: 20px;
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-color: transparent;
-vertical-align: middle;
-background-image: url(../../static/images/douhao.jpg);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 24px;
+  height: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  vertical-align: middle;
+  background-image: url(../../static/images/douhao.jpg);
+}
+/* 喜欢推荐 */
+.sahalao-content {
+  width: 700px;
+  margin-right: -22.5px;
+}
+.dl1 {
+  width: 115px;
+  margin-right: 25px;
+  /* margin: 15px 33px 15px 0; */
+  margin: 15px 33px 26px 0;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+.sahalao-content dl dt {
+  height: 172px;
+  width: 115px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.sahalao-content dl dt a {
+  /* width: 85px; */
+  text-align: center;
+  color: #3377aa;
+}
+
+.sahalao-content img {
+  max-width: 100%;
+  height: 100%;
+  border-width: 0;
+  vertical-align: middle;
+}
+
+.sahalao-content dl dd {
+  margin: 0;
+  padding-top: 3px;
+  overflow: hidden;
+  color: #3377aa;
+  /* font-size: 13px; */
+  font-size: 14px;
+}
+.dl2 {
+  width: 115px;
+  margin-right: 25px;
+  margin: 15px 26px 15px 0;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+.dltest {
+  width: 115px;
+  margin-right: 25px;
+  margin: 15px 0px 15px 0;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+}
+/* 评论开始了 */
+.nav-tab-new {
+  margin-top: 12px;
+}
+
+.tabs-wrapper.line {
+  padding-bottom: 15px;
+  position: relative;
+  border: 0;
+}
+.nav-tab .on-tab {
+  cursor: text;
+  color: #111;
+}
+
+.comment-list {
+  padding-top: 0;
+}
+
+.comment-item {
+  padding: 14px 0;
+  position: relative;
+  margin: 0;
+  /* padding: 20px 0 25px; */
+  overflow: hidden;
+  font-size: 13px;
+  word-break: break-word;
+  font-size: 13px;
+  /* border-top: 1px solid #eaeaea; */
+  border-top: 1px solid gray;
+  width: 713px;
+  /* width: 675px; */
+}
+
+.comment-item .comment {
+  overflow: hidden;
+  line-height: 1.5;
+  color: #494949;
+  /* *zoom: 1; */
+  word-wrap: break-word;
+}
+
+.comment-item h3 {
+  margin-bottom: 0px;
+  background: none;
+  font-size: 13px;
+  height: auto;
+  margin: 0;
+  /* margin-bottom: 0px; */
+  padding: 0;
+  color: #494949;
+  line-height: 1.7em;
+  font-weight: normal;
+}
+.allstar50 {
+  background-position: 0 0px;
+}
+
+.comment-item .comment p {
+  margin: 0;
+  color: #666;
 }
 /* -------------------------------主体部分开始------------------------------------------------- */
