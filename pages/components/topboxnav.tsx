@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import React from "react";
 import "@/static/css/font-awesome.css";
 import { watch } from "fs";
-// import "./css/index.css";
+import "./topboxnav.css";
 // import fetch from "isomorphic-unfetch";
 // import Fromdemo from "./components/from"
 // 声明的全局数据

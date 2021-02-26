@@ -203,3 +203,252 @@ a {
   float: left;
   margin-right: 20px;
 }
+
+/* ------------------------------ */
+
+#wrapper {
+  color: #111;
+  width: 1040px;
+  margin: 0 auto;
+  height: 100%;
+  /* background-color: red; */
+}
+
+#wrapper h1 {
+  font-size: 26px;
+  word-wrap: break-word;
+  display: block;
+  font-weight: bold;
+  color: #494949;
+  margin: 0;
+  padding: 0 0 15px 0;
+  line-height: 1.1;
+}
+
+#wrapper .clear {
+  clear: both;
+  line-height: 0;
+  font-size: 0;
+}
+
+#content {
+  margin: 0 auto;
+  width: 1040px;
+  /* height: 100%; */
+  /* background-color: red; */
+}
+
+.grid-16-8 {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-16-8 .article {
+  width: 675px;
+  float: left;
+  /* width: 590px; */
+  padding-right: 40px;
+  /* background-color: sienna; */
+}
+
+.subject-item .info {
+  overflow: hidden;
+  color: #666;
+}
+.subject-item .info h2 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #111;
+}
+.subject-item .pub {
+  margin: 6px 0 8px;
+}
+
+.allstar45 {
+  background-position: 0 -11px;
+}
+
+.rating_nums {
+  padding-left: 0;
+}
+
+.rating_nums,
+.rating_num {
+  color: #e09015;
+  font-size: 12px;
+  padding: 0 3px;
+}
+
+.pl {
+  font-size: 13px;
+  font: 12px Arial, Helvetica, sans-serif;
+  line-height: 150%;
+  color: #666666;
+}
+
+.subject-item .info .ft {
+  margin-top: 10px;
+  position: relative;
+  min-height: 19px;
+}
+
+.subject-item .cart-actions {
+  margin-top: 10px;
+  color: #bbb;
+}
+
+.subject-item .market-info {
+  margin-left: 0px;
+}
+
+a {
+  color: #3377aa;
+}
+a:hover {
+  color: #8c222c;
+}
+.info .ft .ebook-link {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.ebook-link a {
+  color: #8c222c;
+}
+
+.paginator {
+  font: 14px Arial, Helvetica, sans-serif;
+  color: #aaa;
+  margin: 20px 0;
+  line-height: 150%;
+  text-align: center;
+}
+
+.grid-16-8 .aside {
+  position: static;
+  inset: auto auto 200px 791.667px;
+  width: 300px;
+  float: right;
+  /* top:0; */
+  /* background-color: red; */
+  height: 1000px;
+}
+
+.asidebox {
+  position: relative;
+  margin: 0px 0px 20px;
+  display: block;
+  overflow: hidden;
+  /* background-color: red; */
+  width: 300px;
+  height: 256.367px;
+  /* height: 1000px; */
+}
+
+.guge {
+  line-height: 1;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding: 4px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 16px;
+  color: #111;
+  font: 15px Arial, Helvetica, sans-serif;
+  margin: 0 0 12px 0;
+  line-height: 150%;
+}
+
+.tags-list {
+  margin-bottom: 15px;
+  line-height: 23px;
+}
+
+.tags-list a {
+  margin-right: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+
+.greyinput {
+  color: #ccc;
+  font-size: 13px;
+  margin-right: 3px;
+
+  vertical-align: middle;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.pl2 {
+  font-size: 14px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.pl2 {
+  font: 14px Arial, Helvetica, sans-serif;
+  line-height: 150%;
+  color: #666666;
+}
+
+.block5 {
+  margin-bottom: 20px;
+}
+
+.block5 .content {
+  margin-right: -22.5px;
+}
+
+.block5 .content dl {
+  width: 85px;
+  margin-right: 22.5px;
+}
+
+.block5 .content dl {
+  float: left;
+  margin: 0 18px 10px 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.block5 .content dl dt {
+  height: 127px;
+  overflow: hidden;
+}
+
+.block5 .content dl dt a {
+  text-align: center;
+}
+
+.block5 .content img {
+  max-width: 100%;
+}
+
+a img {
+  border-width: 0;
+  vertical-align: middle;
+}
+.block5 .content dl dd {
+  margin: 0;
+  padding-top: 3px;
+  overflow: hidden;
+}
+.movie_show .content dl dd {
+  color: #999;
+}
