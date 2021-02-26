@@ -467,3 +467,7 @@ a {
 .book_list img:hover {
   transform: scale(1.2);
 }
+
+.lm_box h3 {
+  font-size: 18px;
+}

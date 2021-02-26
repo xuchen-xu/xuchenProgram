@@ -8,61 +8,14 @@ import "../css/newbookdetail.css";
 import cssobj from "../css/newbookdetail2.less";
 import Footer from "../components/footerbook";
 import Aside from "../components/aside";
-
+import Topboxnav from "../components/topboxnav"
 // let bookidtest = 0;
 const IndexPage = (props: any) => {
   return (
     <Layout title="详情页">
       <div className="body-newbookbox">
         {/*----------头部导航栏开始--------------------*/}
-        <div id="db-global-nav" className="global-nav">
-          <div className="bd">
-            <div className="top-nav-info">
-              <a className="nav-login" rel="nofollow">
-                登录/注册
-              </a>
-            </div>
-
-            <div className="top-nav-doubanapp">
-              <a className="lnk-doubanapp">下载网站客户端</a>
-            </div>
-
-            <div className="global-nav-items">
-              <ul>
-                <li className="">
-                  <a target="_blank">孔网</a>
-                </li>
-                <li className="on">
-                  <a>读书</a>
-                </li>
-                <li className="">
-                  <a target="_blank">古籍</a>
-                </li>
-                <li className="">
-                  <a target="_blank">墨迹</a>
-                </li>
-                <li className="">
-                  <a target="_blank">珍本</a>
-                </li>
-                <li className="">
-                  <a target="_blank">小说</a>
-                </li>
-                <li className="">
-                  <a target="_blank">散文</a>
-                </li>
-                <li className="">
-                  <a target="_blank">随笔</a>
-                </li>
-                <li className="">
-                  <a target="_blank">文学</a>
-                </li>
-                <li className="">
-                  <a target="_blank">宗教</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+         <Topboxnav></Topboxnav>
         {/* ----------头部导航栏结束---------------------*/}
         {/*------书本详情框开始-------------------------- */}
         <div className="bookdetail-ershou">
