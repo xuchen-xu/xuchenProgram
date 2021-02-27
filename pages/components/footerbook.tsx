@@ -12,7 +12,7 @@ import "../css/footerbook.css";
 class IndexPage extends React.Component {
   render() {
     return (
-      <div className="footer-box">
+      <div className="footer-box" id="footer">
         <div className="footer-wrap clearfix">
           <div className="copyright-info-box">
             © 2002-2021 Kongfz.com 孔子旧书网 版权所有

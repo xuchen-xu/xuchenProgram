@@ -98,7 +98,7 @@ type IProps = {
 };
 export default class IndexPage extends React.Component<IProps, state> {
   static async getInitialProps() {
-    const res = await fetch("http://localhost:3001/essaytable");
+    const res = await fetch("http://localhost:3001/essay");
     const show = await res.json();
     //这边返回的数据会被挂载到组件的props中
     return { show };

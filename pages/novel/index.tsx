@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import { withRouter } from "next/router";
 import React, { useState, useRef } from "react";
 import "@/static/css/font-awesome.css";
-import "./novel.css";
+import "./common.css";
 import fetch from "isomorphic-unfetch";
 import Topboxnav from "../components/topboxnav";
 import { Pagination } from "antd";
@@ -141,6 +141,7 @@ export default class IndexPage extends React.Component<IProps, State> {
                           .slice(this.state.minValue, this.state.maxValue)
                           .map((item: any) => {
                             return (
+                              <Link href="/novel/[id]" as={`/novel/${item.bookId}`} key={item.bookId}>
                               <li className="subject-item" key={item.bookId}>
                                 <div className="pic">
                                   <a href="">
@@ -221,6 +222,7 @@ export default class IndexPage extends React.Component<IProps, State> {
                                   </div>
                                 </div>
                               </li>
+                              </Link>
                             );
                           })}
                     </ul>
